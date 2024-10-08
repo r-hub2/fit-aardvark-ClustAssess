@@ -1,0 +1,47 @@
+Package: ClustAssess
+Type: Package
+Title: Tools for Assessing Clustering
+Version: 1.0.0
+Authors@R: c(person("Andi", "Munteanu",
+                  email="am3019@cam.ac.uk", role=c("aut", "cre")), person("Arash", "Shahsavari", email="arash8579@hotmail.com",
+                  role = c("aut")), person("Rafael", "Kollyfas", role=c("ctb"), email="rk720@cam.ac.uk"), person("Miguel", "Larraz Lopez de Novales", role=c("aut"), email ="ml2088@cam.ac.uk"), person("Liviu", "Ciortuz", role=c("ctb"), email="liviu_ciortuz@yahoo.co.uk"), person("Irina", "Mohorianu",
+                  email="iim22@cam.ac.uk", role=c("aut")))
+Description: A set of tools for evaluating clustering robustness using 
+    proportion of ambiguously clustered pairs (Senbabaoglu et al. (2014) 
+    <doi:10.1038/srep06207>), as well as similarity across methods 
+    and method stability using element-centric clustering comparison (Gates et 
+    al. (2019) <doi:10.1038/s41598-019-44892-y>). Additionally, this package 
+    enables stability-based parameter assessment for graph-based clustering 
+    pipelines typical in single-cell data analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+biocViews: Software
+Remotes: cole-trapnell-lab/monocle3, jokergoo/ComplexHeatmap,
+        satijalab/seurat-data
+Depends: methods, rlang, stats
+Imports: ComplexHeatmap, dplyr, DT, fastcluster, foreach, glue,
+        Gmedian, ggnewscale, ggplot2, ggrastr, ggrepel, ggtext,
+        gprofiler2, igraph, jsonlite, Matrix (>= 1.5.0), matrixStats,
+        progress, stringr, paletteer, plotly, qualpalr, RANN, reshape2,
+        shiny, shinyjs, shinyLP, shinyWidgets, uwot, vioplot
+Additional_repositories: https://jokergoo.r-universe.dev/packages
+RoxygenNote: 7.3.2
+Roxygen: list(markdown = TRUE)
+LinkingTo: Rcpp, RcppEigen
+Suggests: colourpicker, dbscan, DelayedMatrixStats, dendextend,
+        devtools, doParallel, doRNG, e1071, knitr, leidenbase,
+        monocle3, patchwork, ragg, reactlog, rhdf5, rmarkdown,
+        RhpcBLASctl, scales, Seurat, SeuratData, SeuratObject,
+        SharedObject, styler
+URL: https://github.com/Core-Bioinformatics/ClustAssess
+BugReports: https://github.com/Core-Bioinformatics/ClustAssess/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-10-08 10:17:25 UTC; am3019
+Author: Andi Munteanu [aut, cre],
+  Arash Shahsavari [aut],
+  Rafael Kollyfas [ctb],
+  Miguel Larraz Lopez de Novales [aut],
+  Liviu Ciortuz [ctb],
+  Irina Mohorianu [aut]
+Maintainer: Andi Munteanu <am3019@cam.ac.uk>
